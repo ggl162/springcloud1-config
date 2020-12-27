@@ -7,7 +7,7 @@ spring:
     default-encoding: UTF-8
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/lagou?useUnicode=true&characterEncoding=utf8&serverTimezone=GMT
+    url: jdbc:mysql://localhost:3306/lago?useUnicode=true&characterEncoding=utf8&serverTimezone=GMT
     username: root
     password: 123456
   jpa:
@@ -24,4 +24,4 @@ management:
 lagou:
   message: this is a test message.
 mysql:
-  url: jdbc:mysql://localhost:3306/lagou?useUnicode=true&characterEncoding=utf8&serverTimezone=GMT&test=true
+  url: jdbc:mysql://localhost:3306/lago?useUnicode=true&characterEncoding=utf8&serverTimezone=GMT&test=true
