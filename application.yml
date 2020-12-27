@@ -1,0 +1,27 @@
+spring:
+  mail:
+    host: smtp.qq.com
+    username: 306263369@qq.com
+    password: 
+    protocol: smtp
+    default-encoding: UTF-8
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/lagou?useUnicode=true&characterEncoding=utf8&serverTimezone=GMT
+    username: root
+    password: 123456
+  jpa:
+    database: MySQL
+    show-sql: true
+    hibernate:
+      naming:
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl  #避免将驼峰命名转换为下划线命名
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+lagou:
+  message: this is a test message.
+mysql:
+  url: jdbc:mysql://localhost:3306/lagou?useUnicode=true&characterEncoding=utf8&serverTimezone=GMT&test=true
